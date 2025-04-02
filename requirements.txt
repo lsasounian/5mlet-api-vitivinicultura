@@ -4,3 +4,4 @@ requests
 jwt
 pydantic
 PyJWT
+uvicorn
