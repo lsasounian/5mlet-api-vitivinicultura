@@ -2,9 +2,9 @@ from fastapi import FastAPI, Depends, HTTPException, status, Query
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 import requests
-from services.web_scraper import scrape_table
-from models.model import UserLogin
-from services.auth import create_token, verify_token
+from app.services.web_scraper import scrape_table
+from app.models.model import UserLogin
+from app.services.auth import create_token, verify_token
 import jwt
 import os
 from datetime import datetime, timedelta
