@@ -11,6 +11,10 @@ from datetime import datetime, timedelta
 
 app = FastAPI(title="Vitivinicultura API - Embrapa")
 
+@app.get("/")
+async def root():
+    return {"greeting": "Hello, World!", "message": "Welcome to FastAPI!"}
+    
 @app.post("/login")
 def login(user: UserLogin):
     if user.username == "admin" and user.password == "123456":
