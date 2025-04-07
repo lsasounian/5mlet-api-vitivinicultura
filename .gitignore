@@ -1,0 +1,5 @@
+app/__pycache__/main.cpython-313.pyc
+app/models/__pycache__/model.cpython-313.pyc
+app/services/__pycache__/auth.cpython-313.pyc
+app/services/__pycache__/classificador_abc.cpython-313.pyc
+app/services/__pycache__/web_scraper.cpython-313.pyc

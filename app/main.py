@@ -5,6 +5,7 @@ import requests
 from app.services.web_scraper import scrape_table
 from app.models.model import UserLogin
 from app.services.auth import create_token, verify_token
+from app.services.classificador_abc import exportacao_abc
 import jwt
 import os
 from datetime import datetime, timedelta
@@ -41,4 +42,8 @@ def get_importacao(ano: int = Query(None), subopcao: str = Query(None), categori
 @app.get("/exportacao", dependencies=[Depends(verify_token)])
 def get_exportacao(ano: int = Query(None), subopcao: str = Query(None), categoria: str = Query(None)):
     return scrape_table("opt_06", ano, subopcao, categoria)
+
+@app.get("/abc_exportacao", dependencies=[Depends(verify_token)])
+def get_abc_exportacao(dados: str = Query(None)):
+    return exportacao_abc(dados)
 
