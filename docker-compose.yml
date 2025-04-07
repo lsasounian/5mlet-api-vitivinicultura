@@ -1,11 +1,10 @@
-version: '3.9'
+version: '3.4'
 
 services:
-  vitibrasil-api:
-    build: .
-    container_name: vitibrasil-api
+  5mletapivitivinicultura:
+    image: 5mletapivitivinicultura
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     ports:
-      - "8000:8000"
-    volumes:
-      - .:/app
-    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+      - 8000:8000

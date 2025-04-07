@@ -2,6 +2,6 @@
 
 Para executar, execute
 
-pip install -r requirements.txt
+pip install -r app/requirements.txt
 
 uvicorn app.main:app --reload

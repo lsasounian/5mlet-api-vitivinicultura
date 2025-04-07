@@ -1,0 +1,7 @@
+bs4
+fastapi
+requests
+jwt
+pydantic
+PyJWT
+uvicorn
