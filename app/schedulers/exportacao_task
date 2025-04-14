@@ -12,7 +12,7 @@ USERNAME = "admin"
 PASSWORD = "123456"
 
 # Função para executar o agendamento
-def scheduled_task():
+def tarefa_obter_dados_exportacao():
     try:
         logger.info("Iniciando tarefa agendada para aquisição de dados de exportações e classificação ABC destes dados.")
 
@@ -42,13 +42,17 @@ def scheduled_task():
         
         # Log do resultado final
         logger.info(f"Resultado do endpoint /abc_exportacao: {abc_data}")
+        
         # Chamar a persitência dos dados no banco de dados
+        repository = ExportacaoRepository();
+        repository.persistir_exportacao(abc_data);
+
     except Exception as e:
         logger.error(f"Erro ao executar a tarefa agendada: {e}")
 
 # Configuração do agendador
 scheduler = BackgroundScheduler()
-scheduler.add_job(scheduled_task, "cron", hour=6, minute=0)  # Executa todos os dias às 6h
+scheduler.add_job(tarefa_obter_dados_exportacao, "cron", hour=6, minute=0)  # Executa todos os dias às 6h
 scheduler.start()
 
 # Finaliza o agendador ao encerrar a aplicação
