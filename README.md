@@ -29,7 +29,7 @@ Vitivinicultura API - Embrapa é uma biblioteca Python com objetivo de análise 
 
 ## Configuração
 
-Para executar, execute
+Para executar, execute no diretório raiz do projeto:
 
 `python -m venv .venv`
 
@@ -37,11 +37,11 @@ Para executar, execute
 
 ## Uso
 
-Depois de instalar todas dependências com o comando `pip install -r requirements.txt`, você pode executar o comando a seguir:
+Depois de instalar todas dependências com o comando `pip install -r requirements.txt`, após essa fase você já pode executar o comando a seguir:
 
 `uvicorn app.main:app --reload`
 
-Acesse:
+e acesse o endereço:
 
 http://localhost:8000/docs
 
