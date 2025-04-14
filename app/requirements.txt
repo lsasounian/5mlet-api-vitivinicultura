@@ -5,3 +5,8 @@ jwt
 pydantic
 PyJWT
 uvicorn
+pymongo
+apscheduler
+datetime
+logging
+
