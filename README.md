@@ -1,12 +1,16 @@
 # 5mlet-api-vitivinicultura
 
-É uma biblioteca Python com objetivo de análise de dados de viticultura no Brasil. Ela permite obter dados do site http://vitibrasil.cnpuv.embrapa.br/, obtendo dados de produção, processamento, comercialização, importação e exportação.
+Vitivinicultura API - Embrapa é uma biblioteca Python com objetivo de análise de dados de viticultura no Brasil. Ela permite obter dados do site http://vitibrasil.cnpuv.embrapa.br/, obtendo dados de produção, processamento, comercialização, importação e exportação.
 
 ## Funcionalidades
 
-- Obter dados históricos de ações usando a API do Alpha Vantage.
-- Calcular retorno diário das ações.
-- Visualizar gráficos de preços de fechamento das ações.
+- /login - Retorna o JWT Token para utilizar nos requests da API.
+- /producao - Retorna os dados de produção de vinhos, sucos e derivados do Rio Grande do Sul.
+- /processamento - Retorna os dados de quantidade de uvas processadas no Rio Grande do Sul.
+- /comercializacao - Retorna os dados de comercialização de vinhos e derivados no Rio Grande do Sul.
+- /importacao - Retorna os dados de importação de derivados de uva.
+- /exportacao - Retorna os dados de exportação de derivados de uva.
+- /abc_exportacao - Retorna os dados de Classificador ABC.
 
 ## Requisitos
 
