@@ -37,7 +37,7 @@ Para executar, execute no diretório raiz do projeto:
 
 ## Uso
 
-Depois de instalar todas dependências com o comando `pip install -r requirements.txt`, após essa fase você já pode executar o comando a seguir:
+Depois de instalar todas dependências com o comando `pip install -r app/requirements.txt`, após essa fase você já pode executar o comando a seguir:
 
 `uvicorn app.main:app --reload`
 
