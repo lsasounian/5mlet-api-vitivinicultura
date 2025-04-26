@@ -46,7 +46,8 @@ def scrape_table(url_pagina, ano=None, subopcao=None, categoria_filtro=None):
     if url_pagina in ["opt_05", "opt_06"]:
         tables = soup.find_all("table", class_="tb_base tb_dados")
     else:
-        tables = soup.find_all("table")
+        # FILTRA: pega só tabelas que têm th
+        tables = [table for table in soup.find_all("table") if table.find("th")]
 
     site_data = []
     current_category = None
