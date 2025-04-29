@@ -16,4 +16,4 @@ app.include_router(importacao.router)
 app.include_router(exportacao.router)
 app.include_router(classificador_abc.router)
 
-handler = Mangum(app)
+handler = Mangum(app, lifespan="off")
