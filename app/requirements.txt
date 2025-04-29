@@ -9,4 +9,6 @@ pymongo
 apscheduler
 datetime
 logging
+mangum
 
+JWT
