@@ -8,8 +8,6 @@ app = FastAPI(title="Vitivinicultura API - Embrapa")
 async def root():
     return {"greeting": "Olá, bem vindo a API de Vitivinicultura da Embrapa", "message": "Dúvidas? Faça uma requisição /docs e veja a documentação completa"}
 
-handler = Mangum(app)
-
 app.include_router(login.router)
 app.include_router(producao.router)
 app.include_router(processamento.router)
@@ -17,3 +15,5 @@ app.include_router(comercializacao.router)
 app.include_router(importacao.router)
 app.include_router(exportacao.router)
 app.include_router(classificador_abc.router)
+
+handler = Mangum(app)
