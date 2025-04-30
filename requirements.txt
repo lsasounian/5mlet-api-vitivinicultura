@@ -6,4 +6,3 @@ PyJWT
 uvicorn
 pymongo
 apscheduler
-mangum

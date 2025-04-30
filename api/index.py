@@ -1,12 +1,6 @@
-from mangum import Mangum
-import sys
-import os
+import sys, os
 
-# Adicione o diretório raiz ao caminho do Python
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# garante que o main.py (em raiz) seja encontrado
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
-# Importe a aplicação FastAPI do arquivo main.py
-from main import app
-
-# Crie o handler para o Vercel
-handler = Mangum(app)
+from main import app   # <-- fastapi.FastAPI()
