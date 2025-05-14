@@ -1,12 +1,8 @@
 bs4
 fastapi
 requests
-jwt
 pydantic
 PyJWT
 uvicorn
 pymongo
 apscheduler
-datetime
-logging
-
