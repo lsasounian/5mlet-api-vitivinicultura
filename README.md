@@ -20,7 +20,7 @@
 
 ## Requisitos
 
-* Python 3.7+
+- Python 3.7+
 
 Dependências listadas em `requirements.txt`:
 
@@ -40,29 +40,32 @@ apscheduler
 ## Configuração do Ambiente
 
 1. Clone o repositório:
+
 ```bash
 git clone https://github.com/lsasounian/5mlet-api-vitivinicultura cd 5mlet-api-vitivinicultura
 
-````
+```
 
 2. (Opcional) Crie e ative um ambiente virtual:
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate   # Linux/macOS
 .venv\Scripts\activate    # Windows
-````
+```
 
 3. Instale as dependências:
 
-```bash 
+```bash
 pip install -r requirements.txt
-````
+```
 
 4. Variáveis de ambiente (locais ou via Vercel):
+
 ```bash
 MONGODB_URI=<sua-connection-string-mongodb>
 JWT_SECRET=<seu-segredo-para-JWT>
-````
+```
 
 ---
 
@@ -71,6 +74,16 @@ JWT_SECRET=<seu-segredo-para-JWT>
 Para rodar a API em desenvolvimento, execute:
 
 ```bash
+python -m venv env
+
+env\Scripts\activate
+
+python.exe -m pip install --upgrade pip
+
+pip install -r app/requirements.txt
+
+pip install --upgrade --force-reinstall PyJWT
+
 uvicorn main:app --reload
 ```
 
