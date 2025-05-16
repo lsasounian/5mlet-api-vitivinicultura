@@ -57,7 +57,9 @@ source .venv/bin/activate   # Linux/macOS
 3. Instale as dependências:
 
 ```bash
+python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
+pip install --upgrade --force-reinstall PyJWT
 ```
 
 4. Variáveis de ambiente (locais ou via Vercel):
@@ -74,16 +76,6 @@ JWT_SECRET=<seu-segredo-para-JWT>
 Para rodar a API em desenvolvimento, execute:
 
 ```bash
-python -m venv env
-
-env\Scripts\activate
-
-python.exe -m pip install --upgrade pip
-
-pip install -r app/requirements.txt
-
-pip install --upgrade --force-reinstall PyJWT
-
 uvicorn main:app --reload
 ```
 
