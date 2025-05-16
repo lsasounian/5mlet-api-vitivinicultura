@@ -57,7 +57,7 @@ source .venv/bin/activate   # Linux/macOS
 3. Instale as dependências:
 
 ```bash
-python.exe -m pip install --upgrade pip
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 pip install --upgrade --force-reinstall PyJWT
 ```
