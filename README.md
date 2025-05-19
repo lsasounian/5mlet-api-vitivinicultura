@@ -98,13 +98,13 @@ Esta API já está configurada para deploy automático no [Vercel](https://verce
 Após deploy, a API estará disponível em:
 
 ```
-https://<seu-projeto>.vercel.app/api
+[https://5mlet-api-vitivinicultura-five.vercel.app](https://5mlet-api-vitivinicultura-five.vercel.app)
 ```
 
 E a documentação interativa em:
 
 ```
-https://<seu-projeto>.vercel.app/api/docs
+[https://5mlet-api-vitivinicultura-five.vercel.app/docs](https://5mlet-api-vitivinicultura-five.vercel.app/docs)
 ```
 
 ---
