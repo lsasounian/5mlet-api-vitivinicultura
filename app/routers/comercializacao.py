@@ -16,4 +16,4 @@ router = APIRouter(
 )
 
 def get_comercializacao(params: ComercializacaoQueryParams  = Depends()):
-    return scrape_table("opt_04", params.ano, params.categoria)
+    return scrape_table("opt_04", params.ano)
