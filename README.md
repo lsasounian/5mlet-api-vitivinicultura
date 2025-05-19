@@ -119,6 +119,11 @@ https://5mlet-api-vitivinicultura-five.vercel.app/docs
 
 ---
 
+## Desenho de arquitetura
+![Imagem da arquitetura do projeto](assets/img/arquitetura.jpg)
+
+---
+
 ## 📄 License
 
 Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
