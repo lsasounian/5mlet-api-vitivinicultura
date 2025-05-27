@@ -16,4 +16,4 @@ router = APIRouter(
 )
 
 def get_processamento(params: ProcessamentoQueryParams  = Depends()):
-    return scrape_table("opt_03", params.ano, params.subopcao, params.categoria)
+    return scrape_table("opt_03", params.ano, params.subopcao)

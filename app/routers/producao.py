@@ -15,4 +15,4 @@ router = APIRouter(
     description="Retorna os dados de produção de vinhos, sucos e derivados do Rio Grande do Sul"
 )
 def get_producao(params: ProducaoQueryParams = Depends()):
-    return scrape_table("opt_02", params.ano, params.categoria)
+    return scrape_table("opt_02", params.ano)

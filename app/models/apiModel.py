@@ -8,20 +8,13 @@ class ProducaoQueryParams:
         ano: Optional[int] = Query(
             None,
             title="Ano",
-            description="Ano de referência da produção. Exemplo: 2023.",
+            description="Ano de referência da produção.",
             ge=1970,
             le=2023,
             example=2023
-        ),
-        categoria: Optional[str] = Query(
-            None,
-            title="Categoria",
-            description="Categoria da produção. Exemplo: 'vinho', 'suco', 'uva'.",
-            example="vinho"
-        ),
+        )
     ):
         self.ano = ano
-        self.categoria = categoria
 
 class ProcessamentoQueryParams:
     def __init__(
@@ -29,26 +22,19 @@ class ProcessamentoQueryParams:
         ano: Optional[int] = Query(
             None,
             title="Ano",
-            description="Ano de referência da produção. Exemplo: 2023.",
+            description="Ano de referência da produção.",
             ge=1970,
             le=2023,
             example=2023
         ),
-        categoria: Optional[str] = Query(
-            None,
-            title="Categoria",
-            description="Categoria da produção. Exemplo: 'vinho', 'suco', 'uva'.",
-            example="vinho"
-        ),
         subopcao: Optional[str] = Query(
             None,
             title="Sub Opção",
-            description="Categoria da produção. Exemplo: 'vinho', 'suco', 'uva'.",
-            example="vinho"
+            description="Subopção do processamento. Caso não saiba o valor, faça uma requisição sem este parametro para ver as opções disponíveis.",
+            example="subopt_01"
         )
     ):
         self.ano = ano
-        self.categoria = categoria
         self.subopcao = subopcao
 
 class ComercializacaoQueryParams:
@@ -57,20 +43,13 @@ class ComercializacaoQueryParams:
         ano: Optional[int] = Query(
             None,
             title="Ano",
-            description="Ano de referência da produção. Exemplo: 2023.",
+            description="Ano de referência da produção.",
             ge=1970,
             le=2023,
             example=2023
-        ),
-        categoria: Optional[str] = Query(
-            None,
-            title="Categoria",
-            description="Categoria da produção. Exemplo: 'vinho', 'suco', 'uva'.",
-            example="vinho"
-        ),
+        )
     ):
         self.ano = ano
-        self.categoria = categoria
 
 class ImportacaoQueryParams:
     def __init__(
@@ -78,7 +57,7 @@ class ImportacaoQueryParams:
         ano: Optional[int] = Query(
             None,
             title="Ano",
-            description="Ano de referência da produção. Exemplo: 2023.",
+            description="Ano de referência da produção.",
             ge=1970,
             le=2023,
             example=2023
@@ -86,8 +65,8 @@ class ImportacaoQueryParams:
         subopcao: Optional[str] = Query(
             None,
             title="Sub Opção",
-            description="Categoria da produção. Exemplo: 'vinho', 'suco', 'uva'.",
-            example="vinho"
+            description="Subopção do processamento. Caso não saiba o valor, faça uma requisição sem este parametro para ver as opções disponíveis.",
+            example="subopt_01"
         )
     ):
         self.ano = ano
@@ -99,7 +78,7 @@ class ExportacaoQueryParams:
         ano: Optional[int] = Query(
             None,
             title="Ano",
-            description="Ano de referência da produção. Exemplo: 2023.",
+            description="Ano de referência da produção.",
             ge=1970,
             le=2023,
             example=2023
@@ -107,8 +86,8 @@ class ExportacaoQueryParams:
         subopcao: Optional[str] = Query(
             None,
             title="Sub Opção",
-            description="Categoria da produção. Exemplo: 'vinho', 'suco', 'uva'.",
-            example="vinho"
+            description="Subopção do processamento. Caso não saiba o valor, faça uma requisição sem este parametro para ver as opções disponíveis.",
+            example="subopt_01"
         )
     ):
         self.ano = ano
