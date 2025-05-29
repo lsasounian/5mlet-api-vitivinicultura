@@ -1,0 +1,427 @@
+type: collection.insomnia.rest/5.0
+name: 5mlet-api-vitivinicultura - VERCEL
+meta:
+  id: wrk_9aedc78c00994e608a08132383d5bbac
+  created: 1747357865955
+  modified: 1747357865955
+collection:
+  - url: https://5mlet-api-vitivinicultura-five.vercel.app/producao?ano=2023
+    name: Produção
+    meta:
+      id: req_b2b3f20902304a8293f37f9b4815bb45
+      created: 1747357865963
+      modified: 1747867963096
+      isPrivate: false
+      sortKey: -1743900072647
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzQwMDk3OX0.N5zcqU-6IKkKazdNxW5470Ws9b2pKtwj9YRtM8cIZJs
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://5mlet-api-vitivinicultura-five.vercel.app/processamento?ano=2023
+    name: Processamento
+    meta:
+      id: req_c5002995e6334f57abddbfdd0a147631
+      created: 1747357865965
+      modified: 1747867929043
+      isPrivate: false
+      sortKey: -1743900072547
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://5mlet-api-vitivinicultura-five.vercel.app/comercializacao?ano=2023
+    name: Comercialização
+    meta:
+      id: req_de8d4e4d41c74b52a62436bebf9b7891
+      created: 1747357865966
+      modified: 1747867882846
+      isPrivate: false
+      sortKey: -1743900072447
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://5mlet-api-vitivinicultura-five.vercel.app/importacao?ano=2023
+    name: Importação
+    meta:
+      id: req_647ccf61d5dd4c828ce117eea515baf2
+      created: 1747357865968
+      modified: 1747867869607
+      isPrivate: false
+      sortKey: -1743900072347
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://5mlet-api-vitivinicultura-five.vercel.app/exportacao?ano=2023
+    name: Exportação
+    meta:
+      id: req_e4392556e8534049b8f8a51326b57f70
+      created: 1747357865969
+      modified: 1747358005223
+      isPrivate: false
+      sortKey: -1743900072247
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://5mlet-api-vitivinicultura-five.vercel.app/abc_exportacao
+    name: Exportação Curva ABC
+    meta:
+      id: req_5630ef2956cc4e6e83df9c1ed290dc6d
+      created: 1747357865973
+      modified: 1748516965130
+      isPrivate: false
+      sortKey: -1743900072147
+    method: GET
+    parameters:
+      - id: pair_3d6f69657eac4784b188f7d4e3ac0a57
+        name: dados
+        value: '{	"dados": [		{			"Países": "Afeganistão",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "África do
+          Sul",			"Quantidade (Kg)": "117",			"Valor (US$)":
+          "698"		},		{			"Países": "Alemanha, República
+          Democrática",			"Quantidade (Kg)": "4.806",			"Valor (US$)":
+          "31.853"		},		{			"Países": "Angola",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Anguilla",			"Quantidade
+          (Kg)": "-",			"Valor (US$)": "-"		},		{			"Países": "Antígua e
+          Barbuda",			"Quantidade (Kg)": "383",			"Valor (US$)":
+          "1.848"		},		{			"Países": "Antilhas Holandesas",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Arábia
+          Saudita",			"Quantidade (Kg)": "124",			"Valor (US$)":
+          "142"		},		{			"Países": "Argélia",			"Quantidade (Kg)": "-",			"Valor
+          (US$)": "-"		},		{			"Países": "Argentina",			"Quantidade (Kg)":
+          "4.545",			"Valor (US$)": "36.133"		},		{			"Países":
+          "Aruba",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Austrália",			"Quantidade (Kg)":
+          "2.485",			"Valor (US$)": "13.565"		},		{			"Países":
+          "Áustria",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Bahamas",			"Quantidade (Kg)":
+          "1.348",			"Valor (US$)": "7.402"		},		{			"Países":
+          "Bangladesh",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Barbados",			"Quantidade (Kg)": "58",			"Valor
+          (US$)": "303"		},		{			"Países": "Barein",			"Quantidade (Kg)":
+          "283",			"Valor (US$)": "1.684"		},		{			"Países":
+          "Bélgica",			"Quantidade (Kg)": "95",			"Valor (US$)":
+          "683"		},		{			"Países": "Belice",			"Quantidade (Kg)": "-",			"Valor
+          (US$)": "-"		},		{			"Países": "Benin",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Bermudas",			"Quantidade
+          (Kg)": "16",			"Valor (US$)": "153"		},		{			"Países":
+          "Bolívia",			"Quantidade (Kg)": "21.926",			"Valor (US$)":
+          "36.950"		},		{			"Países": "Bósnia-Herzegovina",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Brasil",			"Quantidade
+          (Kg)": "-",			"Valor (US$)": "-"		},		{			"Países":
+          "Bulgária",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Cabo Verde",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Camarões",			"Quantidade
+          (Kg)": "-",			"Valor (US$)": "-"		},		{			"Países":
+          "Canadá",			"Quantidade (Kg)": "11.539",			"Valor (US$)":
+          "42.179"		},		{			"Países": "Catar",			"Quantidade (Kg)":
+          "5",			"Valor (US$)": "18"		},		{			"Países": "Cayman,
+          Ilhas",			"Quantidade (Kg)": "438",			"Valor (US$)":
+          "2.632"		},		{			"Países": "Chile",			"Quantidade (Kg)": "9",			"Valor
+          (US$)": "63"		},		{			"Países": "China",			"Quantidade (Kg)":
+          "73.917",			"Valor (US$)": "183.096"		},		{			"Países":
+          "Chipre",			"Quantidade (Kg)": "524",			"Valor (US$)":
+          "2.995"		},		{			"Países": "Cingapura",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Cocos (Keeling),
+          Ilhas",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Colômbia",			"Quantidade (Kg)":
+          "450",			"Valor (US$)": "1.259"		},		{			"Países":
+          "Comores",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Congo",			"Quantidade (Kg)":
+          "17.100",			"Valor (US$)": "26.600"		},		{			"Países": "Coreia,
+          Republica Sul",			"Quantidade (Kg)": "25",			"Valor (US$)":
+          "171"		},		{			"Países": "Costa do Marfim",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Costa
+          Rica",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Coveite (Kuweit)",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Croácia",			"Quantidade
+          (Kg)": "-",			"Valor (US$)": "-"		},		{			"Países":
+          "Cuba",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Curaçao",			"Quantidade (Kg)":
+          "25.135",			"Valor (US$)": "40.807"		},		{			"Países":
+          "Dinamarca",			"Quantidade (Kg)": "1.734",			"Valor (US$)":
+          "15.261"		},		{			"Países": "Dominica",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "El
+          Salvador",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Emirados Arabes Unidos",			"Quantidade (Kg)":
+          "1.417",			"Valor (US$)": "6.762"		},		{			"Países":
+          "Equador",			"Quantidade (Kg)": "2.790",			"Valor (US$)":
+          "4.392"		},		{			"Países": "Eslovaca, Republica",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Espanha",			"Quantidade
+          (Kg)": "180",			"Valor (US$)": "4.171"		},		{			"Países": "Estados
+          Unidos",			"Quantidade (Kg)": "229.839",			"Valor (US$)":
+          "429.091"		},		{			"Países": "Estônia",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países":
+          "Filipinas",			"Quantidade (Kg)": "94",			"Valor (US$)":
+          "334"		},		{			"Países": "Finlândia",			"Quantidade (Kg)":
+          "5",			"Valor (US$)": "11"		},		{			"Países": "França",			"Quantidade
+          (Kg)": "2.265",			"Valor (US$)": "14.722"		},		{			"Países":
+          "Gabão",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Gana",			"Quantidade (Kg)": "7.237",			"Valor
+          (US$)": "29.473"		},		{			"Países": "Gibraltar",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Granada",			"Quantidade
+          (Kg)": "-",			"Valor (US$)": "-"		},		{			"Países":
+          "Grécia",			"Quantidade (Kg)": "1.294",			"Valor (US$)":
+          "3.214"		},		{			"Países": "Guatemala",			"Quantidade (Kg)":
+          "2.053",			"Valor (US$)": "3.758"		},		{			"Países":
+          "Guiana",			"Quantidade (Kg)": "33.651",			"Valor (US$)":
+          "88.715"		},		{			"Países": "Guiana Francesa",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Guine
+          Bissau",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Guine Equatorial",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Haiti",			"Quantidade
+          (Kg)": "559.645",			"Valor (US$)": "871.661"		},		{			"Países":
+          "Honduras",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Hong Kong",			"Quantidade (Kg)":
+          "16.255",			"Valor (US$)": "71.025"		},		{			"Países":
+          "Hungria",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Ilha de Man",			"Quantidade (Kg)":
+          "1.428",			"Valor (US$)": "4.533"		},		{			"Países": "Ilhas
+          Virgens",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Índia",			"Quantidade (Kg)": "60",			"Valor
+          (US$)": "170"		},		{			"Países": "Indonésia",			"Quantidade (Kg)":
+          "9",			"Valor (US$)": "30"		},		{			"Países": "Irã",			"Quantidade
+          (Kg)": "-",			"Valor (US$)": "-"		},		{			"Países":
+          "Iraque",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Irlanda",			"Quantidade (Kg)": "150",			"Valor
+          (US$)": "377"		},		{			"Países": "Itália",			"Quantidade (Kg)":
+          "2.922",			"Valor (US$)": "27.665"		},		{			"Países":
+          "Jamaica",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Japão",			"Quantidade (Kg)":
+          "22.942",			"Valor (US$)": "57.780"		},		{			"Países":
+          "Jordânia",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Letônia",			"Quantidade (Kg)": "8",			"Valor
+          (US$)": "8"		},		{			"Países": "Líbano",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Libéria",			"Quantidade
+          (Kg)": "39.784",			"Valor (US$)": "42.463"		},		{			"Países":
+          "Luxemburgo",			"Quantidade (Kg)": "581",			"Valor (US$)":
+          "7.048"		},		{			"Países": "Macau",			"Quantidade (Kg)": "7",			"Valor
+          (US$)": "6"		},		{			"Países": "Malásia",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Malavi",			"Quantidade
+          (Kg)": "3.660",			"Valor (US$)": "6.252"		},		{			"Países":
+          "Malta",			"Quantidade (Kg)": "6.561",			"Valor (US$)":
+          "24.199"		},		{			"Países": "Marshall, Ilhas",			"Quantidade (Kg)":
+          "7.417",			"Valor (US$)": "31.691"		},		{			"Países":
+          "Martinica",			"Quantidade (Kg)": "9",			"Valor (US$)":
+          "31"		},		{			"Países": "Mauritânia",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "México",			"Quantidade
+          (Kg)": "3",			"Valor (US$)": "19"		},		{			"Países":
+          "Moçambique",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Montenegro",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Namíbia",			"Quantidade
+          (Kg)": "-",			"Valor (US$)": "-"		},		{			"Países":
+          "Nicarágua",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Nigéria",			"Quantidade (Kg)":
+          "10.800",			"Valor (US$)": "16.464"		},		{			"Países":
+          "Noruega",			"Quantidade (Kg)": "861",			"Valor (US$)":
+          "4.243"		},		{			"Países": "Nova Caledônia",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Nova
+          Zelândia",			"Quantidade (Kg)": "338",			"Valor (US$)":
+          "7.177"		},		{			"Países": "Omã",			"Quantidade (Kg)": "-",			"Valor
+          (US$)": "-"		},		{			"Países": "Países Baixos",			"Quantidade (Kg)":
+          "2.244",			"Valor (US$)": "4.958"		},		{			"Países":
+          "Palau",			"Quantidade (Kg)": "45",			"Valor (US$)":
+          "143"		},		{			"Países": "Panamá",			"Quantidade (Kg)":
+          "14.785",			"Valor (US$)": "68.173"		},		{			"Países":
+          "Paraguai",			"Quantidade (Kg)": "3.780.378",			"Valor (US$)":
+          "5.517.263"		},		{			"Países": "Peru",			"Quantidade (Kg)":
+          "47.277",			"Valor (US$)": "84.282"		},		{			"Países":
+          "Pitcairn",			"Quantidade (Kg)": "11",			"Valor (US$)":
+          "22"		},		{			"Países": "Polônia",			"Quantidade (Kg)":
+          "298",			"Valor (US$)": "590"		},		{			"Países": "Porto
+          Rico",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Portugal",			"Quantidade (Kg)":
+          "13.742",			"Valor (US$)": "46.311"		},		{			"Países":
+          "Quênia",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Reino Unido",			"Quantidade (Kg)":
+          "11.326",			"Valor (US$)": "84.547"		},		{			"Países": "República
+          Dominicana",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Rússia",			"Quantidade (Kg)": "-",			"Valor
+          (US$)": "-"		},		{			"Países": "São Cristóvão e Névis",			"Quantidade
+          (Kg)": "16",			"Valor (US$)": "31"		},		{			"Países": "São Tomé e
+          Príncipe",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "São Vicente e Granadinas",			"Quantidade
+          (Kg)": "39",			"Valor (US$)": "139"		},		{			"Países":
+          "Senegal",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Serra Leoa",			"Quantidade (Kg)":
+          "23.200",			"Valor (US$)": "38.548"		},		{			"Países":
+          "Sérvia",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Singapura",			"Quantidade (Kg)":
+          "3.941",			"Valor (US$)": "19.781"		},		{			"Países":
+          "Suazilândia",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Suécia",			"Quantidade (Kg)": "-",			"Valor
+          (US$)": "-"		},		{			"Países": "Suíça",			"Quantidade (Kg)":
+          "2.500",			"Valor (US$)": "28.763"		},		{			"Países":
+          "Suriname",			"Quantidade (Kg)": "3.105",			"Valor (US$)":
+          "5.235"		},		{			"Países": "Tailândia",			"Quantidade (Kg)":
+          "189",			"Valor (US$)": "1.387"		},		{			"Países": "Taiwan
+          (Formosa)",			"Quantidade (Kg)": "4.208",			"Valor (US$)":
+          "19.998"		},		{			"Países": "Tanzânia",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Tcheca,
+          República",			"Quantidade (Kg)": "405",			"Valor (US$)":
+          "3.348"		},		{			"Países": "Togo",			"Quantidade (Kg)":
+          "14.550",			"Valor (US$)": "25.235"		},		{			"Países":
+          "Toquelau",			"Quantidade (Kg)": "3",			"Valor (US$)":
+          "10"		},		{			"Países": "Trinidade Tobago",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Tunísia",			"Quantidade
+          (Kg)": "-",			"Valor (US$)": "-"		},		{			"Países":
+          "Turquia",			"Quantidade (Kg)": "28.104",			"Valor (US$)":
+          "95.421"		},		{			"Países": "Tuvalu",			"Quantidade (Kg)":
+          "-",			"Valor (US$)": "-"		},		{			"Países": "Uruguai",			"Quantidade
+          (Kg)": "326.093",			"Valor (US$)": "454.271"		},		{			"Países":
+          "Vanuatu",			"Quantidade (Kg)": "-",			"Valor (US$)":
+          "-"		},		{			"Países": "Venezuela",			"Quantidade (Kg)":
+          "141.030",			"Valor (US$)": "220.512"		},		{			"Países":
+          "Vietnã",			"Quantidade (Kg)": "72",			"Valor (US$)": "128"		}	]}'
+        disabled: false
+        type: text
+        multiline: false
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODU2MDEwOH0.5Iu7b0l523GdBroartniYB76DBL924KDrVpJtbD1uWY
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://5mlet-api-vitivinicultura-five.vercel.app/login
+    name: Login
+    meta:
+      id: req_15c3b809599f4985ac5be8bf365ba78f
+      created: 1747357865974
+      modified: 1748516952768
+      isPrivate: false
+      sortKey: -1744069130955
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "admin",
+          "password": "123456"
+        }
+    parameters:
+      - id: pair_cd985aeba6aa4089bf9b0e54dc1c62f9
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://5mlet-api-vitivinicultura-five.vercel.app/abc_exportacao
+    name: Exportação Curva ABC2
+    meta:
+      id: req_7135fb0b65f94e6098cd28fa77de6401
+      created: 1748519496477
+      modified: 1748534908979
+      isPrivate: false
+      sortKey: -1743900072097
+    method: GET
+    parameters:
+      - id: pair_3d6f69657eac4784b188f7d4e3ac0a57
+        name: dadospair_3d6f69657eac4784b188f7d4e3ac0a57pair_3d6f69657eac4784b188f7d4e3ac0a57
+        value: '{"dados":[{"Países": "Haiti","Quantidade (Kg)": "559.645","Valor (US$)":
+          "871.661"},{"Países": "Paraguai","Quantidade (Kg)": "3.780.378","Valor
+          (US$)": "5.517.263"},{"Países": "Uruguai","Quantidade (Kg)":
+          "326.093","Valor (US$)": "454.271"}]}'
+        disabled: false
+        type: text
+        multiline: false
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODU2MDEwOH0.5Iu7b0l523GdBroartniYB76DBL924KDrVpJtbD1uWY
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_0935834bc5c040cc9a83d58dbdbac41c
+    created: 1747357865962
+    modified: 1747357865962
+environments:
+  name: Base Environment
+  meta:
+    id: env_debb0d481bdc4ef0ae377f34f78760b4
+    created: 1747357865960
+    modified: 1747357865960
+    isPrivate: false

@@ -18,6 +18,10 @@
 
 ---
 
+## Como utilizar o Classificador ABC aplicado aos dados de exportação
+
+É obrigatório repassar o token na autenticação e em params preencher o parâmetro chamado dados com o valor: {"dados":[{"Países": "Haiti","Quantidade (Kg)": "559.645","Valor (US$)": "871.661"},{"Países": "Paraguai","Quantidade (Kg)": "3.780.378","Valor (US$)": "5.517.263"},{"Países": "Uruguai","Quantidade (Kg)": "326.093","Valor (US$)": "454.271"}]} onde o valor é o atributo dados do retorno do endpoint /exportação carregando os dados de exportação para a classificação da curva ABC.
+
 ## Requisitos
 
 - Python 3.7+
@@ -87,6 +91,54 @@ http://localhost:8000/docs
 
 ---
 
+---
+
+## Execução Local em debug
+
+Para rodar a API em desenvolvimento em modo debug no VSCode, execute:
+
+criar uma pasta .vscode e colocar o arquivo launch.json com o conteúdo a seguir:
+
+```
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug FastAPI (uvicorn)",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "main:app",
+        "--reload",
+        "--host", "127.0.0.1",
+        "--port", "8000"
+      ],
+      "jinja": true,
+      "justMyCode": true,
+      "env": {
+        "ENV": "dev"
+      }
+    }
+  ]
+}
+
+```
+
+Na classe main.py na linha 4 onde tem o conteúdo app = FastAPI(title="Vitivinicultura API - Embrapa") trocar o conteúdo para app = FastAPI(title="Vitivinicultura API - Embrapa", debug=True)
+
+Agora é só ir no VSCode, na classe que gostaria de debugar, adicionar o break point na linha que deseja analisar e acionar o comando CTRL + SHIFT + D e Seleciona Debug FastAPI (uvicorn) apertando o Play Verde. Após a aplicação subir efetuar a chamada ao endpoint que chame a classe onde foi adicionado o break point e assim que a requisição for feita a aplicação irá interromper a execução no ponto indicado.
+
+![Imagem de uma requisição interrompida em um break point](assets/img/debug.jpg)
+
+---
+
+## Utilizando o Insomnia (Cliente para REST)
+
+Como forma de facilitar as chmadas a Vitivinicultura API - Embrapa iremos utilizao o cliente Insomnia disponibilizado no endereço '''https://insomnia.rest/download''' para download. Baixe e instale o Insomnia conforme a versão do seu sistema operacional. Após isso podemos importar os arquivos de configuração insominia [local](assets/insomnia/local.yaml) e [vercel](assets/insomnia/vercel.yaml) com as requisições já configuradas. Após isso submeta o login e troque o token de resposta em todas as requisições.
+
+---
+
 ## Deploy em Vercel
 
 Esta API já está configurada para deploy automático no [Vercel](https://vercel.com):
@@ -120,6 +172,7 @@ https://5mlet-api-vitivinicultura-five.vercel.app/docs
 ---
 
 ## Desenho de arquitetura
+
 ![Imagem da arquitetura do projeto](assets/img/arquitetura.jpg)
 
 ---
