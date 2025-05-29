@@ -98,13 +98,13 @@ Esta API já está configurada para deploy automático no [Vercel](https://verce
 Após deploy, a API estará disponível em:
 
 ```
-https://<seu-projeto>.vercel.app/api
+https://5mlet-api-vitivinicultura-five.vercel.app
 ```
 
 E a documentação interativa em:
 
 ```
-https://<seu-projeto>.vercel.app/api/docs
+https://5mlet-api-vitivinicultura-five.vercel.app/docs
 ```
 
 ---
@@ -116,6 +116,11 @@ https://<seu-projeto>.vercel.app/api/docs
 3. Commit suas alterações: `git commit -am 'Descrição das alterações'`.
 4. Envie sua branch: `git push origin feature/nome-da-feature`.
 5. Abra um Pull Request.
+
+---
+
+## Desenho de arquitetura
+![Imagem da arquitetura do projeto](assets/img/arquitetura.jpg)
 
 ---
 

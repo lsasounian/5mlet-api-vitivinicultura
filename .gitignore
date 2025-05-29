@@ -5,6 +5,7 @@ app/services/__pycache__/*
 app/services/__pycache__/*
 app/services/__pycache__/*
 .vscode/*
+app/routers/__pycache__/*
 app/routers/__pycache__/classificador_abc.cpython-313.pyc
 app/routers/__pycache__/comercializacao.cpython-313.pyc
 app/routers/__pycache__/exportacao.cpython-313.pyc

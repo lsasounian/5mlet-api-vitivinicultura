@@ -27,11 +27,26 @@ def scrape_table(url_pagina, ano=None, subopcao=None, categoria_filtro=None):
     subopcao_label = None
     if url_pagina in ["opt_03", "opt_05", "opt_06"]:
         buttons = soup.find_all("button", class_="btn_sopt")
-        subopcoes_disponiveis = {btn.get("value"): btn.get_text(strip=True) for btn in buttons if btn.get("type") == "submit"}
-        if subopcao:
-            if subopcao not in subopcoes_disponiveis:
-                raise HTTPException(status_code=400, detail="Subopcao inválida para esta página")
-            subopcao_label = subopcoes_disponiveis[subopcao]
+        subopcoes_disponiveis = {
+            btn.get("value", "").strip(): btn.get_text(strip=True)
+            for btn in buttons if btn.get("type") == "submit"
+        }
+
+        if subopcao is None:
+            return {
+                "mensagem": f"Para a página '{url_pagina}', é necessário informar uma 'subopcao'.",
+                "subopcoes_disponiveis": subopcoes_disponiveis
+            }
+
+        subopcao_limpa = subopcao.strip()
+
+        if subopcao_limpa not in subopcoes_disponiveis:
+            return {
+                "mensagem": f"Subopcao inválida: '{subopcao}'.",
+                "subopcoes_disponiveis": subopcoes_disponiveis
+            }
+
+        subopcao_label = subopcoes_disponiveis[subopcao_limpa]
 
     header_text = soup.find("p", class_="text_center")
     header_content = header_text.get_text(strip=True) if header_text else None
