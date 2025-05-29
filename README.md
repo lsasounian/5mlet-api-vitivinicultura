@@ -20,7 +20,49 @@
 
 ## Como utilizar o Classificador ABC aplicado aos dados de exportação
 
-É obrigatório repassar o token na autenticação e em params preencher o parâmetro chamado dados com o valor: {"dados":[{"Países": "Haiti","Quantidade (Kg)": "559.645","Valor (US$)": "871.661"},{"Países": "Paraguai","Quantidade (Kg)": "3.780.378","Valor (US$)": "5.517.263"},{"Países": "Uruguai","Quantidade (Kg)": "326.093","Valor (US$)": "454.271"}]} onde o valor é o atributo dados do retorno do endpoint /exportação carregando os dados de exportação para a classificação da curva ABC.
+É obrigatório repassar o token na autenticação e em params preencher o parâmetro chamado dados exemplo:
+
+```
+valor: {    "dados":[
+                    {"Países": "Haiti","Quantidade (Kg)": "559.645","Valor (US$)": "871.661"},
+                    {"Países": "Paraguai","Quantidade (Kg)": "3.780.378","Valor (US$)": "5.517.263"}
+                    ,{"Países": "Uruguai","Quantidade (Kg)": "326.093","Valor (US$)": "454.271"}
+                    ]
+        }
+```
+
+Onde o valor é o atributo dados é o retorno do endpoint /exportação, com isso carregamos os dados de exportação para a classificação da curva ABC. Agora é só submeter a requisição que retornará os dados classificados conforme o exemplo:
+
+```
+    [
+        {
+            'Países': 'Paraguai',
+            'Quantidade (Kg)': '3.780.378',
+            'Valor (US$)': '5.517.263',
+            'classificação': 'A',
+            'participação': '80.62%',
+            'acumulado': '80.62%'
+        },
+        {
+            'Países': 'Haiti',
+            'Quantidade (Kg)': '559.645',
+            'Valor (US$)': '871.661',
+            'classificação': 'A',
+            'participação': '12.74%',
+            'acumulado': '93.36%'
+        },
+        {
+            'Países': 'Uruguai',
+            'Quantidade (Kg)': '326.093',
+            'Valor (US$)': '454.271',
+            'classificação': 'A',
+            'participação': '6.64%',
+            'acumulado': '100.00%'
+        }
+    ]
+```
+
+---
 
 ## Requisitos
 
@@ -88,8 +130,6 @@ Acesse o Swagger UI em:
 ```
 http://localhost:8000/docs
 ```
-
----
 
 ---
 
