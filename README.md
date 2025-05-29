@@ -215,7 +215,7 @@ https://5mlet-api-vitivinicultura-kappa.vercel.app/docs
 
 ![Imagem da arquitetura do projeto](assets/img/arquitetura.jpg)
 
---- 
+---
 
 ## 📄 License
 
