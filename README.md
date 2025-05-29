@@ -190,13 +190,13 @@ Esta API já está configurada para deploy automático no [Vercel](https://verce
 Após deploy, a API estará disponível em:
 
 ```
-https://5mlet-api-vitivinicultura-five.vercel.app
+https://5mlet-api-vitivinicultura-kappa.vercel.app
 ```
 
 E a documentação interativa em:
 
 ```
-https://5mlet-api-vitivinicultura-five.vercel.app/docs
+https://5mlet-api-vitivinicultura-kappa.vercel.app/docs
 ```
 
 ---
