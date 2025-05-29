@@ -135,7 +135,7 @@ Agora é só ir no VSCode, na classe que gostaria de debugar, adicionar o break 
 
 ## Utilizando o Insomnia (Cliente para REST)
 
-Como forma de facilitar as chmadas a Vitivinicultura API - Embrapa iremos utilizao o cliente Insomnia disponibilizado no endereço '''https://insomnia.rest/download''' para download. Baixe e instale o Insomnia conforme a versão do seu sistema operacional. Após isso podemos importar os arquivos de configuração insominia [local](assets/insomnia/local.yaml) e [vercel](assets/insomnia/vercel.yaml) com as requisições já configuradas. Após isso submeta o login e troque o token de resposta em todas as requisições.
+Como forma de facilitar as chmadas a Vitivinicultura API - Embrapa iremos utilizao o cliente Insomnia disponibilizado no endereço '''https://insomnia.rest/download''' para download. Baixe e instale o Insomnia conforme a versão do seu sistema operacional. Após isso podemos baixar e importar os arquivos de configuração insominia [local](assets/insomnia/local.yaml) e [vercel](assets/insomnia/vercel.yaml) com as requisições já configuradas. Após isso submeta o login e troque o token de resposta em todas as requisições.
 
 ---
 
