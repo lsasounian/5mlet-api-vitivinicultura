@@ -10,7 +10,7 @@ collection:
     meta:
       id: req_b2b3f20902304a8293f37f9b4815bb45
       created: 1747357865963
-      modified: 1748558493710
+      modified: 1748558763200
       isPrivate: false
       sortKey: -1743900072647
     method: GET
@@ -19,7 +19,7 @@ collection:
         value: insomnia/11.0.2
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzQwMDk3OX0.N5zcqU-6IKkKazdNxW5470Ws9b2pKtwj9YRtM8cIZJs
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODYwMTk1Mn0.7DIc4FJm0JpwHngW-j0WjhIdFPu_vFnxBbXSdumRSYI
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -28,12 +28,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/processamento?ano=2023
+  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/processamento?ano=2023&subopcao=subopt_02
     name: Processamento
     meta:
       id: req_c5002995e6334f57abddbfdd0a147631
       created: 1747357865965
-      modified: 1748558504313
+      modified: 1748558864245
       isPrivate: false
       sortKey: -1743900072547
     method: GET
@@ -42,7 +42,7 @@ collection:
         value: insomnia/11.0.2
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODYwMTk1Mn0.7DIc4FJm0JpwHngW-j0WjhIdFPu_vFnxBbXSdumRSYI
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -56,7 +56,7 @@ collection:
     meta:
       id: req_de8d4e4d41c74b52a62436bebf9b7891
       created: 1747357865966
-      modified: 1748558511332
+      modified: 1748559020058
       isPrivate: false
       sortKey: -1743900072447
     method: GET
@@ -65,7 +65,7 @@ collection:
         value: insomnia/11.0.2
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODYwMTk1Mn0.7DIc4FJm0JpwHngW-j0WjhIdFPu_vFnxBbXSdumRSYI
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -74,12 +74,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/importacao?ano=2023
+  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/importacao?ano=2023&subopcao=subopt_02
     name: Importação
     meta:
       id: req_647ccf61d5dd4c828ce117eea515baf2
       created: 1747357865968
-      modified: 1748558521565
+      modified: 1748559078551
       isPrivate: false
       sortKey: -1743900072347
     method: GET
@@ -88,7 +88,7 @@ collection:
         value: insomnia/11.0.2
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODYwMTk1Mn0.7DIc4FJm0JpwHngW-j0WjhIdFPu_vFnxBbXSdumRSYI
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -97,12 +97,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/exportacao?ano=2023
+  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/exportacao?ano=2023&subopcao=subopt_04
     name: Exportação
     meta:
       id: req_e4392556e8534049b8f8a51326b57f70
       created: 1747357865969
-      modified: 1748558528293
+      modified: 1748559119703
       isPrivate: false
       sortKey: -1743900072247
     method: GET
@@ -111,7 +111,7 @@ collection:
         value: insomnia/11.0.2
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODYwMTk1Mn0.7DIc4FJm0JpwHngW-j0WjhIdFPu_vFnxBbXSdumRSYI
     settings:
       renderRequestBody: true
       encodeUrl: true

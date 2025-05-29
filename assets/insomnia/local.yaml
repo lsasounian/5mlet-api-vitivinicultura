@@ -10,7 +10,7 @@ collection:
     meta:
       id: req_d1a3eb3d38d84c66ab1d283614df61bc
       created: 1743899942852
-      modified: 1747869831255
+      modified: 1748559415688
       isPrivate: false
       sortKey: -1743900072647
     method: GET
@@ -19,7 +19,7 @@ collection:
         value: insomnia/11.0.2
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzkxMzAxNn0.ZbTxIqfKxs7F3ot1Qkt37Dzd23Fv-TXTsE0Vf42Mr_s
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODYwMjYwMH0.Rl7Vric30oZPlA5JwJQJDKY_BAFBAMabKAUw56maalg
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -28,12 +28,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: http://127.0.0.1:8000/processamento?ano=2023
+  - url: http://127.0.0.1:8000/processamento?ano=2023&subopcao=subopt_03
     name: Processamento
     meta:
       id: req_a63974d7aedd43428f551f647b8f2788
       created: 1743900072547
-      modified: 1747352199778
+      modified: 1748559446220
       isPrivate: false
       sortKey: -1743900072547
     method: GET
@@ -42,7 +42,7 @@ collection:
         value: insomnia/11.0.2
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODYwMjYwMH0.Rl7Vric30oZPlA5JwJQJDKY_BAFBAMabKAUw56maalg
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -56,7 +56,7 @@ collection:
     meta:
       id: req_289f7cc34d9c4216a230c543bd8cca57
       created: 1743900367891
-      modified: 1747352347424
+      modified: 1748559461241
       isPrivate: false
       sortKey: -1743900072447
     method: GET
@@ -65,7 +65,7 @@ collection:
         value: insomnia/11.0.2
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODYwMjYwMH0.Rl7Vric30oZPlA5JwJQJDKY_BAFBAMabKAUw56maalg
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -74,12 +74,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: http://127.0.0.1:8000/importacao?ano=2023
+  - url: http://127.0.0.1:8000/importacao?ano=2023&subopcao=subopt_02
     name: Importação
     meta:
       id: req_ad689b2672784c8585317327b6b5ad33
       created: 1743900458946
-      modified: 1747352348733
+      modified: 1748559489282
       isPrivate: false
       sortKey: -1743900072347
     method: GET
@@ -88,7 +88,7 @@ collection:
         value: insomnia/11.0.2
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODYwMjYwMH0.Rl7Vric30oZPlA5JwJQJDKY_BAFBAMabKAUw56maalg
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -97,12 +97,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: http://127.0.0.1:8000/exportacao?ano=2023
+  - url: http://127.0.0.1:8000/exportacao?ano=2023&subopcao=subopt_03
     name: Exportação
     meta:
       id: req_433acc6571e44aa1ade210cc44d70261
       created: 1743900524129
-      modified: 1747352353644
+      modified: 1748559603904
       isPrivate: false
       sortKey: -1743900072247
     method: GET
@@ -111,7 +111,7 @@ collection:
         value: insomnia/11.0.2
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODYwMjYwMH0.Rl7Vric30oZPlA5JwJQJDKY_BAFBAMabKAUw56maalg
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -125,7 +125,7 @@ collection:
     meta:
       id: req_f62657934c78446a83224978c3468d1d
       created: 1743904163387
-      modified: 1747353407613
+      modified: 1748559613733
       isPrivate: false
       sortKey: -1743900072147
     method: GET
@@ -338,7 +338,7 @@ collection:
         value: insomnia/11.0.2
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzM5NTM1M30.Ri9zTN3vSy-LzOPwLrDEGt8AcXuGzF-WX_3evwCyUtk
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODYwMjYwMH0.Rl7Vric30oZPlA5JwJQJDKY_BAFBAMabKAUw56maalg
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -352,7 +352,7 @@ collection:
     meta:
       id: req_3f7a46dd07ab4cea9f5898facd952ec9
       created: 1744069130955
-      modified: 1747869816348
+      modified: 1748559400739
       isPrivate: false
       sortKey: -1744069130955
     method: POST
