@@ -5,12 +5,12 @@ meta:
   created: 1747357865955
   modified: 1747357865955
 collection:
-  - url: https://5mlet-api-vitivinicultura-five.vercel.app/producao?ano=2023
+  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/producao?ano=2023
     name: Produção
     meta:
       id: req_b2b3f20902304a8293f37f9b4815bb45
       created: 1747357865963
-      modified: 1747867963096
+      modified: 1748558493710
       isPrivate: false
       sortKey: -1743900072647
     method: GET
@@ -28,12 +28,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://5mlet-api-vitivinicultura-five.vercel.app/processamento?ano=2023
+  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/processamento?ano=2023
     name: Processamento
     meta:
       id: req_c5002995e6334f57abddbfdd0a147631
       created: 1747357865965
-      modified: 1747867929043
+      modified: 1748558504313
       isPrivate: false
       sortKey: -1743900072547
     method: GET
@@ -51,12 +51,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://5mlet-api-vitivinicultura-five.vercel.app/comercializacao?ano=2023
+  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/comercializacao?ano=2023
     name: Comercialização
     meta:
       id: req_de8d4e4d41c74b52a62436bebf9b7891
       created: 1747357865966
-      modified: 1747867882846
+      modified: 1748558511332
       isPrivate: false
       sortKey: -1743900072447
     method: GET
@@ -74,12 +74,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://5mlet-api-vitivinicultura-five.vercel.app/importacao?ano=2023
+  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/importacao?ano=2023
     name: Importação
     meta:
       id: req_647ccf61d5dd4c828ce117eea515baf2
       created: 1747357865968
-      modified: 1747867869607
+      modified: 1748558521565
       isPrivate: false
       sortKey: -1743900072347
     method: GET
@@ -97,12 +97,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://5mlet-api-vitivinicultura-five.vercel.app/exportacao?ano=2023
+  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/exportacao?ano=2023
     name: Exportação
     meta:
       id: req_e4392556e8534049b8f8a51326b57f70
       created: 1747357865969
-      modified: 1747358005223
+      modified: 1748558528293
       isPrivate: false
       sortKey: -1743900072247
     method: GET
@@ -120,12 +120,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://5mlet-api-vitivinicultura-five.vercel.app/abc_exportacao
+  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/abc_exportacao
     name: Exportação Curva ABC
     meta:
       id: req_5630ef2956cc4e6e83df9c1ed290dc6d
       created: 1747357865973
-      modified: 1748516965130
+      modified: 1748558533038
       isPrivate: false
       sortKey: -1743900072147
     method: GET
@@ -347,12 +347,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://5mlet-api-vitivinicultura-five.vercel.app/login
+  - url: https://5mlet-api-vitivinicultura-kappa.vercel.app/login
     name: Login
     meta:
       id: req_15c3b809599f4985ac5be8bf365ba78f
       created: 1747357865974
-      modified: 1748516952768
+      modified: 1748558477919
       isPrivate: false
       sortKey: -1744069130955
     method: POST
@@ -371,39 +371,6 @@ collection:
         value: application/json
       - name: User-Agent
         value: insomnia/11.0.2
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: https://5mlet-api-vitivinicultura-five.vercel.app/abc_exportacao
-    name: Exportação Curva ABC2
-    meta:
-      id: req_7135fb0b65f94e6098cd28fa77de6401
-      created: 1748519496477
-      modified: 1748534908979
-      isPrivate: false
-      sortKey: -1743900072097
-    method: GET
-    parameters:
-      - id: pair_3d6f69657eac4784b188f7d4e3ac0a57
-        name: dadospair_3d6f69657eac4784b188f7d4e3ac0a57pair_3d6f69657eac4784b188f7d4e3ac0a57
-        value: '{"dados":[{"Países": "Haiti","Quantidade (Kg)": "559.645","Valor (US$)":
-          "871.661"},{"Países": "Paraguai","Quantidade (Kg)": "3.780.378","Valor
-          (US$)": "5.517.263"},{"Países": "Uruguai","Quantidade (Kg)":
-          "326.093","Valor (US$)": "454.271"}]}'
-        disabled: false
-        type: text
-        multiline: false
-    headers:
-      - name: User-Agent
-        value: insomnia/11.0.2
-    authentication:
-      type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0ODU2MDEwOH0.5Iu7b0l523GdBroartniYB76DBL924KDrVpJtbD1uWY
     settings:
       renderRequestBody: true
       encodeUrl: true
